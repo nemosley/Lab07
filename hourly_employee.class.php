@@ -6,11 +6,11 @@
  * Description: Creates the Hourly Employee class
  **/
 
-class hourlyEmployee extends Employee {
+class HourlyEmployee extends Employee {
     private float $wage;
     private int $hours;
 
-    public function __construct(Person $person, string $ssn, float $hours, int $wage) {
+    public function __construct(Person $person, string $ssn, float $wage, int $hours) {
         parent::__construct($person, $ssn);
         $this->wage = $wage;
         $this->hours = $hours;
