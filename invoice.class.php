@@ -15,7 +15,7 @@ class Invoice implements Payable
     private static int $invoice_count = 0;  // matches UML: -invoice_count: integer
 
     // -------- attributes (match UML names/types) --------
-    private int $part_number;               // UML shows getPartNumber: integer
+    private string $part_number;               // UML shows getPartNumber: integer
     private string $part_description;
     private int $quantity;
     private float $price_per_item;
